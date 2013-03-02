@@ -9,9 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ANSAddBookViewController : UITableViewController
-@property (weak, nonatomic) IBOutlet UITextField *title;
-@property (weak, nonatomic) IBOutlet UITextField *author;
-@property (weak, nonatomic) IBOutlet UITextField *isbn;
-- (IBAction)addBook:(id)sender;
 
 @end

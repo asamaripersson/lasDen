@@ -81,9 +81,6 @@
                                     <state key="highlighted">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
-                                    <connections>
-                                        <action selector="addBook:" destination="EUp-ID-Kyg" eventType="touchUpInside" id="d40-mp-kUv"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -191,11 +188,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1df-PX-ymv"/>
-                    <connections>
-                        <outlet property="author" destination="Ec2-3G-dhI" id="Q8E-Go-YIj"/>
-                        <outlet property="isbn" destination="2Ef-FA-OHQ" id="9MV-lN-m7g"/>
-                        <outlet property="title" destination="A6q-kE-nSg" id="zQc-Ro-E6e"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZh-DQ-JcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
