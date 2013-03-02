@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C76052116E2967C006D0C94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */; };
+		1C76052316E29803006D0C94 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76052216E29803006D0C94 /* CoreData.framework */; };
 		1C98B28516E2890600262CBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28416E2890600262CBD /* UIKit.framework */; };
 		1C98B28716E2890600262CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28616E2890600262CBD /* Foundation.framework */; };
 		1C98B28916E2890600262CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28816E2890600262CBD /* CoreGraphics.framework */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C76052016E2967C006D0C94 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1C76052216E29803006D0C94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1C98B28116E2890600262CBD /* lasDen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lasDen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C98B28416E2890600262CBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C98B28616E2890600262CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C76052316E29803006D0C94 /* CoreData.framework in Frameworks */,
 				1C98B28516E2890600262CBD /* UIKit.framework in Frameworks */,
 				1C98B28716E2890600262CBD /* Foundation.framework in Frameworks */,
 				1C98B28916E2890600262CBD /* CoreGraphics.framework in Frameworks */,
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				1C98B28416E2890600262CBD /* UIKit.framework */,
+				1C76052216E29803006D0C94 /* CoreData.framework */,
 				1C98B28616E2890600262CBD /* Foundation.framework */,
 				1C98B28816E2890600262CBD /* CoreGraphics.framework */,
 				1C98B2A816E2890800262CBD /* SenTestingKit.framework */,
@@ -121,6 +127,7 @@
 				1C98B29416E2890700262CBD /* ANSAppDelegate.m */,
 				1C98B29C16E2890700262CBD /* MainStoryboard.storyboard */,
 				1C98B29F16E2890700262CBD /* ANSViewController.h */,
+				1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */,
 				1C98B2A016E2890700262CBD /* ANSViewController.m */,
 				1C98B28B16E2890700262CBD /* Supporting Files */,
 			);
@@ -274,6 +281,7 @@
 				1C98B29116E2890700262CBD /* main.m in Sources */,
 				1C98B29516E2890700262CBD /* ANSAppDelegate.m in Sources */,
 				1C98B2A116E2890700262CBD /* ANSViewController.m in Sources */,
+				1C76052116E2967C006D0C94 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +462,7 @@
 				1C98B2BB16E2890800262CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C98B2BC16E2890800262CBD /* Build configuration list for PBXNativeTarget "lasDenTests" */ = {
 			isa = XCConfigurationList;
@@ -462,8 +471,22 @@
 				1C98B2BE16E2890800262CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C76052016E2967C006D0C94 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1C76052016E2967C006D0C94 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C98B27916E2890600262CBD /* Project object */;
 }
