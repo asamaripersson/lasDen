@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		1C76052116E2967C006D0C94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */; };
 		1C76052316E29803006D0C94 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C76052216E29803006D0C94 /* CoreData.framework */; };
+		1C76053116E29D40006D0C94 /* ANSBookStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76053016E29D40006D0C94 /* ANSBookStorage.m */; };
+		1C76053416E29D4D006D0C94 /* ANSCriticStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76053316E29D4C006D0C94 /* ANSCriticStorage.m */; };
+		1C76053716E29D57006D0C94 /* ANSReviewStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76053616E29D57006D0C94 /* ANSReviewStorage.m */; };
+		1C76053B16E2A278006D0C94 /* Critic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76053A16E2A278006D0C94 /* Critic.m */; };
+		1C76053E16E2A278006D0C94 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76053D16E2A278006D0C94 /* Book.m */; };
+		1C76054116E2A278006D0C94 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054016E2A278006D0C94 /* Review.m */; };
+		1C76054416E2A279006D0C94 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054316E2A279006D0C94 /* Author.m */; };
+		1C76054716E2A2A6006D0C94 /* ANSAuthorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054616E2A2A6006D0C94 /* ANSAuthorStorage.m */; };
+		1C76054A16E2A504006D0C94 /* ANSCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054816E2A504006D0C94 /* ANSCoreDataService.m */; };
+		1C76054B16E2A504006D0C94 /* ANSCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054816E2A504006D0C94 /* ANSCoreDataService.m */; };
 		1C98B28516E2890600262CBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28416E2890600262CBD /* UIKit.framework */; };
 		1C98B28716E2890600262CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28616E2890600262CBD /* Foundation.framework */; };
 		1C98B28916E2890600262CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28816E2890600262CBD /* CoreGraphics.framework */; };
@@ -40,6 +50,24 @@
 /* Begin PBXFileReference section */
 		1C76052016E2967C006D0C94 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1C76052216E29803006D0C94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1C76052F16E29D40006D0C94 /* ANSBookStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSBookStorage.h; sourceTree = "<group>"; };
+		1C76053016E29D40006D0C94 /* ANSBookStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSBookStorage.m; sourceTree = "<group>"; };
+		1C76053216E29D4C006D0C94 /* ANSCriticStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSCriticStorage.h; sourceTree = "<group>"; };
+		1C76053316E29D4C006D0C94 /* ANSCriticStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCriticStorage.m; sourceTree = "<group>"; };
+		1C76053516E29D57006D0C94 /* ANSReviewStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSReviewStorage.h; sourceTree = "<group>"; };
+		1C76053616E29D57006D0C94 /* ANSReviewStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSReviewStorage.m; sourceTree = "<group>"; };
+		1C76053916E2A278006D0C94 /* Critic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Critic.h; path = ../Critic.h; sourceTree = "<group>"; };
+		1C76053A16E2A278006D0C94 /* Critic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Critic.m; path = ../Critic.m; sourceTree = "<group>"; };
+		1C76053C16E2A278006D0C94 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = ../Book.h; sourceTree = "<group>"; };
+		1C76053D16E2A278006D0C94 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ../Book.m; sourceTree = "<group>"; };
+		1C76053F16E2A278006D0C94 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Review.h; path = ../Review.h; sourceTree = "<group>"; };
+		1C76054016E2A278006D0C94 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Review.m; path = ../Review.m; sourceTree = "<group>"; };
+		1C76054216E2A278006D0C94 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Author.h; path = ../Author.h; sourceTree = "<group>"; };
+		1C76054316E2A279006D0C94 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Author.m; path = ../Author.m; sourceTree = "<group>"; };
+		1C76054516E2A2A6006D0C94 /* ANSAuthorStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAuthorStorage.h; sourceTree = "<group>"; };
+		1C76054616E2A2A6006D0C94 /* ANSAuthorStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAuthorStorage.m; sourceTree = "<group>"; };
+		1C76054816E2A504006D0C94 /* ANSCoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCoreDataService.m; sourceTree = "<group>"; };
+		1C76054916E2A504006D0C94 /* ANSCoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSCoreDataService.h; sourceTree = "<group>"; };
 		1C98B28116E2890600262CBD /* lasDen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lasDen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C98B28416E2890600262CBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C98B28616E2890600262CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +117,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C76052716E29C5A006D0C94 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C98B29F16E2890700262CBD /* ANSViewController.h */,
+				1C98B2A016E2890700262CBD /* ANSViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		1C76052816E29C74006D0C94 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */,
+				1C76053816E29D61006D0C94 /* Storages */,
+			);
+			name = ModelClasses;
+			sourceTree = "<group>";
+		};
+		1C76053816E29D61006D0C94 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				1C76054216E2A278006D0C94 /* Author.h */,
+				1C76054316E2A279006D0C94 /* Author.m */,
+				1C76053F16E2A278006D0C94 /* Review.h */,
+				1C76054016E2A278006D0C94 /* Review.m */,
+				1C76053C16E2A278006D0C94 /* Book.h */,
+				1C76053D16E2A278006D0C94 /* Book.m */,
+				1C76053916E2A278006D0C94 /* Critic.h */,
+				1C76053A16E2A278006D0C94 /* Critic.m */,
+				1C76054916E2A504006D0C94 /* ANSCoreDataService.h */,
+				1C76054816E2A504006D0C94 /* ANSCoreDataService.m */,
+				1C76052F16E29D40006D0C94 /* ANSBookStorage.h */,
+				1C76053016E29D40006D0C94 /* ANSBookStorage.m */,
+				1C76053216E29D4C006D0C94 /* ANSCriticStorage.h */,
+				1C76053316E29D4C006D0C94 /* ANSCriticStorage.m */,
+				1C76053516E29D57006D0C94 /* ANSReviewStorage.h */,
+				1C76053616E29D57006D0C94 /* ANSReviewStorage.m */,
+				1C76054516E2A2A6006D0C94 /* ANSAuthorStorage.h */,
+				1C76054616E2A2A6006D0C94 /* ANSAuthorStorage.m */,
+			);
+			name = Storages;
+			sourceTree = "<group>";
+		};
 		1C98B27816E2890600262CBD = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +197,8 @@
 				1C98B29316E2890700262CBD /* ANSAppDelegate.h */,
 				1C98B29416E2890700262CBD /* ANSAppDelegate.m */,
 				1C98B29C16E2890700262CBD /* MainStoryboard.storyboard */,
-				1C98B29F16E2890700262CBD /* ANSViewController.h */,
-				1C76051F16E2967C006D0C94 /* Model.xcdatamodeld */,
-				1C98B2A016E2890700262CBD /* ANSViewController.m */,
+				1C76052816E29C74006D0C94 /* ModelClasses */,
+				1C76052716E29C5A006D0C94 /* viewControllers */,
 				1C98B28B16E2890700262CBD /* Supporting Files */,
 			);
 			path = lasDen;
@@ -282,6 +352,15 @@
 				1C98B29516E2890700262CBD /* ANSAppDelegate.m in Sources */,
 				1C98B2A116E2890700262CBD /* ANSViewController.m in Sources */,
 				1C76052116E2967C006D0C94 /* Model.xcdatamodeld in Sources */,
+				1C76053116E29D40006D0C94 /* ANSBookStorage.m in Sources */,
+				1C76053416E29D4D006D0C94 /* ANSCriticStorage.m in Sources */,
+				1C76053716E29D57006D0C94 /* ANSReviewStorage.m in Sources */,
+				1C76053B16E2A278006D0C94 /* Critic.m in Sources */,
+				1C76053E16E2A278006D0C94 /* Book.m in Sources */,
+				1C76054116E2A278006D0C94 /* Review.m in Sources */,
+				1C76054416E2A279006D0C94 /* Author.m in Sources */,
+				1C76054716E2A2A6006D0C94 /* ANSAuthorStorage.m in Sources */,
+				1C76054A16E2A504006D0C94 /* ANSCoreDataService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C98B2B616E2890800262CBD /* lasDenTests.m in Sources */,
+				1C76054B16E2A504006D0C94 /* ANSCoreDataService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

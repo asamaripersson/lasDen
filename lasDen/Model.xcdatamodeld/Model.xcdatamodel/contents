@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="11G63" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Book" syncable="YES">
-        <attribute name="authorFirstName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="authorLastName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gengre" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasWritten" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="isWrittenBy" inverseEntity="Book" syncable="YES"/>
     </entity>
-    <entity name="Critic" syncable="YES">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isbn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasReviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Review" inverseName="reviewsBook" inverseEntity="Review" syncable="YES"/>
+        <relationship name="isWrittenBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="hasWritten" inverseEntity="Author" syncable="YES"/>
+    </entity>
+    <entity name="Critic" representedClassName="Critic" syncable="YES">
         <attribute name="criticID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasWrittenReview" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Review" inverseName="isWrittenBy" inverseEntity="Review" syncable="YES"/>
     </entity>
-    <entity name="Review" syncable="YES">
+    <entity name="Genre" syncable="YES"/>
+    <entity name="Review" representedClassName="Review" syncable="YES">
         <attribute name="reviewText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="isWrittenBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Critic" inverseName="hasWrittenReview" inverseEntity="Critic" syncable="YES"/>
+        <relationship name="reviewsBook" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="hasReviews" inverseEntity="Book" syncable="YES"/>
     </entity>
+    <entity name="TopList" syncable="YES"/>
     <elements>
-        <element name="Critic" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="Book" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="Review" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Critic" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Book" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Review" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Author" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Genre" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="TopList" positionX="160" positionY="192" width="128" height="45"/>
     </elements>
 </model>
