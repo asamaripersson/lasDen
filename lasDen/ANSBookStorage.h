@@ -7,17 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-@class ANSBook, ANSAuthor;
+@class Book, Author;
 @interface ANSBookStorage : NSObject
 
 +(ANSBookStorage *)sharedStorage;
 
 //add year???!!!
--(ANSBook*)addBookWithTitle:(NSString*)title Author:(ANSAuthor*)author;
+-(Book*)addBookWithTitle:(NSString*)title Author:(Author*)author;
 
--(NSArray *)allBooksWrittenBy:(ANSAuthor*)author;
+-(NSArray *)allBooksWrittenBy:(Author*)author;
 
 -(NSArray*)allBooksBelongsToGengre:(NSString*)genre;
 
--(void)removeFriend:(ANSBook *)book;
+-(void)removeFriend:(Book *)book;
 @end

@@ -7,7 +7,10 @@
 //
 
 #import "ANSBookStorage.h"
+#import "Book.h"
 #import "ANSCoreDataService.h"
+#import "Author.h"
+
 
 @implementation ANSBookStorage
 
@@ -35,12 +38,12 @@
     }
     return self;
 }
--(ANSBook *)addBookWithTitle:(NSString *)title Author:(ANSAuthor *)author
+-(Book *)addBookWithTitle:(NSString *)title Author:(Author *)author
 {
-//    ANSBook *book = [NSEntityDescription insertNewObjectForEntityForName:@"ANSBook"
-//                                              inManagedObjectContext:context];
-//    book.title = title;
-//    book.author = author;
+    Book *book = [NSEntityDescription insertNewObjectForEntityForName:@"ANSBook"
+                                              inManagedObjectContext:context];
+    book.title = title;
+    book.isWrittenBy = author;
     return nil;
 }
 @end

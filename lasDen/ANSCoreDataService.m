@@ -7,7 +7,7 @@
 //
 
 #import "ANSCoreDataService.h"
-#import "Friend.h"
+#import "Book.h"
 
 @implementation ANSCoreDataService
 {
