@@ -19,6 +19,10 @@
 		1C76054716E2A2A6006D0C94 /* ANSAuthorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054616E2A2A6006D0C94 /* ANSAuthorStorage.m */; };
 		1C76054A16E2A504006D0C94 /* ANSCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054816E2A504006D0C94 /* ANSCoreDataService.m */; };
 		1C76054B16E2A504006D0C94 /* ANSCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054816E2A504006D0C94 /* ANSCoreDataService.m */; };
+		1C76054E16E2AA31006D0C94 /* ANSBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054D16E2AA31006D0C94 /* ANSBooksViewController.m */; };
+		1C76054F16E2AA31006D0C94 /* ANSBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76054D16E2AA31006D0C94 /* ANSBooksViewController.m */; };
+		1C76055216E2AB1B006D0C94 /* ANSAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76055116E2AB1B006D0C94 /* ANSAddBookViewController.m */; };
+		1C76055316E2AB1B006D0C94 /* ANSAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C76055116E2AB1B006D0C94 /* ANSAddBookViewController.m */; };
 		1C98B28516E2890600262CBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28416E2890600262CBD /* UIKit.framework */; };
 		1C98B28716E2890600262CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28616E2890600262CBD /* Foundation.framework */; };
 		1C98B28916E2890600262CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C98B28816E2890600262CBD /* CoreGraphics.framework */; };
@@ -68,6 +72,10 @@
 		1C76054616E2A2A6006D0C94 /* ANSAuthorStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAuthorStorage.m; sourceTree = "<group>"; };
 		1C76054816E2A504006D0C94 /* ANSCoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCoreDataService.m; sourceTree = "<group>"; };
 		1C76054916E2A504006D0C94 /* ANSCoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSCoreDataService.h; sourceTree = "<group>"; };
+		1C76054C16E2AA31006D0C94 /* ANSBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSBooksViewController.h; sourceTree = "<group>"; };
+		1C76054D16E2AA31006D0C94 /* ANSBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSBooksViewController.m; sourceTree = "<group>"; };
+		1C76055016E2AB1B006D0C94 /* ANSAddBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAddBookViewController.h; sourceTree = "<group>"; };
+		1C76055116E2AB1B006D0C94 /* ANSAddBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAddBookViewController.m; sourceTree = "<group>"; };
 		1C98B28116E2890600262CBD /* lasDen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lasDen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C98B28416E2890600262CBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C98B28616E2890600262CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +130,10 @@
 			children = (
 				1C98B29F16E2890700262CBD /* ANSViewController.h */,
 				1C98B2A016E2890700262CBD /* ANSViewController.m */,
+				1C76054C16E2AA31006D0C94 /* ANSBooksViewController.h */,
+				1C76054D16E2AA31006D0C94 /* ANSBooksViewController.m */,
+				1C76055016E2AB1B006D0C94 /* ANSAddBookViewController.h */,
+				1C76055116E2AB1B006D0C94 /* ANSAddBookViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -361,6 +373,8 @@
 				1C76054416E2A279006D0C94 /* Author.m in Sources */,
 				1C76054716E2A2A6006D0C94 /* ANSAuthorStorage.m in Sources */,
 				1C76054A16E2A504006D0C94 /* ANSCoreDataService.m in Sources */,
+				1C76054E16E2AA31006D0C94 /* ANSBooksViewController.m in Sources */,
+				1C76055216E2AB1B006D0C94 /* ANSAddBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +384,8 @@
 			files = (
 				1C98B2B616E2890800262CBD /* lasDenTests.m in Sources */,
 				1C76054B16E2A504006D0C94 /* ANSCoreDataService.m in Sources */,
+				1C76054F16E2AA31006D0C94 /* ANSBooksViewController.m in Sources */,
+				1C76055316E2AB1B006D0C94 /* ANSAddBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

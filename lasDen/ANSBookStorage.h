@@ -19,5 +19,5 @@
 
 -(NSArray*)allBooksBelongsToGengre:(NSString*)genre;
 
--(void)removeFriend:(Book *)book;
+-(void)removeBook:(Book *)book;
 @end

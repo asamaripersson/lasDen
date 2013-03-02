@@ -46,4 +46,17 @@
     book.isWrittenBy = author;
     return nil;
 }
+-(NSArray *)allBooksWrittenBy:(Author*)author
+{
+    return nil;
+}
+
+-(NSArray*)allBooksBelongsToGengre:(NSString*)genre
+{
+    return nil;
+}
+-(void)removeBook:(Book *)book
+{
+}
+
 @end
